@@ -184,31 +184,26 @@ Access interactive API documentation:
 - **API Versioning** - Backward-compatible API evolution
 - **Security Enhancements** - OAuth 2.0, rate limiting, API key management
 
+---
+
 ## Contributing
 
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
-
-### Development Workflow
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
 3. Commit your changes (`git commit -m 'Add amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
+---
+
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Support
-
-- **Documentation**: Check our [Wiki](https://github.com/yourusername/SmartLoan360/wiki)
-- **Issues**: Report bugs via [GitHub Issues](https://github.com/yourusername/SmartLoan360/issues)
-- **Discussions**: Join our [GitHub Discussions](https://github.com/yourusername/SmartLoan360/discussions)
-
-## Show Your Support
-
-If you find this project helpful, please consider giving it a star on GitHub!
+MIT License — see [LICENSE](LICENSE) file for details.
 
 ---
 
-**SmartLoan360** - Demonstrating modern microservices architecture with real-world loan
+## Contact
+
+**Anis Toauti**  
+Senior .NET Developer | Cloud & DevOps Enthusiast  
+[LinkedIn](https://www.linkedin.com/in/anistouati) | [GitHub](https://github.com/kiranis) | Montréal, QC
