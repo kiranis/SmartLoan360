@@ -1,5 +1,8 @@
 using MediatR;
 
-public record ScoreLoanCommand(string FullName, decimal Amount, int TermMonths) : IRequest<ScoreLoanResult>;
+namespace Features.ScoreLoan
+{
+    public record ScoreLoanCommand(string FullName, decimal Amount, int TermMonths) : IRequest<ScoreLoanResult>;
 
-public record ScoreLoanResult(float Score, string Risk);
+    public record ScoreLoanResult(float Score, string Risk);
+}

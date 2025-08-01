@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { LoanService } from '../../services/loan.service';
+import { LoanService, LoanRequest } from '../../services/loan.service';
 
 @Component({
   selector: 'app-loan',
-  templateUrl: './loan.component.html',
+  templateUrl: './loan.component.html'
 })
 export class LoanComponent {
   fullName = '';
@@ -20,21 +20,20 @@ export class LoanComponent {
       return;
     }
 
-    const loanRequest = {
+    const loanRequest: LoanRequest = {
       fullName: this.fullName,
       amount: this.amount,
       termMonths: this.termMonths
     };
 
-    this.loanService.applyForLoan(loanRequest).subscribe({
+    this.loanService.applyLoan(loanRequest).subscribe({
       next: (response) => {
         this.result = response;
         this.error = '';
       },
-      error: (err) => {
+      error: () => {
         this.error = 'Failed to submit loan application';
         this.result = null;
-        console.error('Loan application error:', err);
       }
     });
   }

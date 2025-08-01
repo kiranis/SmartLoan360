@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from typing import Literal
 
-app = FastAPI()
+app = FastAPI(title="Loan Scoring Engine", version="1.0.0")
 
 class ScoreRequest(BaseModel):
     fullName: str
@@ -15,17 +15,12 @@ class ScoreResponse(BaseModel):
 
 @app.post("/score", response_model=ScoreResponse)
 def score_loan(data: ScoreRequest):
-    # Mock scoring logic
     if data.amount < 5000:
-        risk = "low"
-        score = 0.9
+        return ScoreResponse(score=0.9, risk="low")
     elif data.amount < 15000:
-        risk = "medium"
-        score = 0.6
+        return ScoreResponse(score=0.6, risk="medium")
     else:
-        risk = "high"
-        score = 0.3
-    return ScoreResponse(score=score, risk=risk)
+        return ScoreResponse(score=0.3, risk="high")
 
 if __name__ == "__main__":
     import uvicorn

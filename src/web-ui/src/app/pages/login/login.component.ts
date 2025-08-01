@@ -4,11 +4,11 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
-  templateUrl: './login.component.html',
+  templateUrl: './login.component.html'
 })
 export class LoginComponent {
   username = '';
-  password = '';
+  password = '';  
   error = '';
 
   constructor(private auth: AuthService, private router: Router) {}

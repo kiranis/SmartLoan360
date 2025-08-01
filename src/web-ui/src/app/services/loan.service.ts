@@ -2,20 +2,16 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environments/environment';
 
-export interface LoanApplication {
+export interface LoanRequest {
   fullName: string;
   amount: number;
   termMonths: number;
 }
 
-export interface LoanResult {
+export interface LoanResponse {
   message: string;
   approvedAmount: number;
-}
-
-export interface ScoreResult {
-  score: number;
-  risk: string;
+  applicationId: string;
 }
 
 @Injectable({ providedIn: 'root' })
@@ -24,11 +20,11 @@ export class LoanService {
 
   constructor(private http: HttpClient) {}
 
-  applyForLoan(application: LoanApplication) {
-    return this.http.post<LoanResult>(`${this.apiUrl}/api/apply`, application);
+  applyLoan(request: LoanRequest) {
+    return this.http.post<LoanResponse>(`${this.apiUrl}/api/apply`, request);
   }
 
-  scoreLoan(application: LoanApplication) {
-    return this.http.post<ScoreResult>(`${this.apiUrl}/api/score`, application);
+  scoreLoan(request: LoanRequest) {
+    return this.http.post<any>(`${this.apiUrl}/api/score`, request);
   }
 }

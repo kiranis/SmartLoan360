@@ -1,7 +1,7 @@
-using System.Reflection;
 using FluentValidation;
+using System.Reflection;
 
-namespace Microsoft.Extensions.DependencyInjection
+namespace Extensions
 {
     public static class ServiceCollectionExtensions
     {
@@ -9,17 +9,18 @@ namespace Microsoft.Extensions.DependencyInjection
         {
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+        
             return services;
         }
 
         public static IServiceCollection AddHttpClients(this IServiceCollection services)
         {
-            services.AddHttpClient("ScoringApi", client =>
+            services.AddHttpClient();
+            services.AddHttpClient("ScoringEngine", client =>
             {
-                // For local development, use localhost instead of scoring-engine
                 client.BaseAddress = new Uri("http://localhost:8000");
             });
-
+        
             return services;
         }
     }
