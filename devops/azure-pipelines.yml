@@ -1,0 +1,14 @@
+# Azure Pipelines YAML placeholder
+
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+stages:
+- stage: Build
+  jobs:
+  - job: BuildApp
+    steps:
+    - script: echo Building SmartLoan360

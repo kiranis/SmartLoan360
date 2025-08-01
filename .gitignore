@@ -1,0 +1,348 @@
+# .NET
+bin/
+obj/
+out/
+*.user
+*.suo
+*.cache
+*.docstates
+*.tmp
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.scc
+*~
+*.swp
+*.DS_Store
+[Bb]in
+[Oo]bj
+[Tt]est[Rr]esults
+*.dotCover
+*.ncrunch*
+.*crunch*.local.xml
+_ReSharper*
+[Tt]humbs.db
+[Ss]tyle[Cc]op.*
+~$*
+*.dbmdl
+*.[Pp]ublish.xml
+*.pfx
+*.publishsettings
+*.nupkg
+*.tgz
+*.zip
+*.tar.gz
+TestResults/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+*_i.c
+*_p.c
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*.vspscc
+*.vssscc
+.builds
+*.dotCover
+.localhistory/
+_TeamCity*
+*.DotSettings.user
+*.Generated.cs
+launchSettings.json
+
+# Visual Studio
+.vs/
+.vscode/
+*.userprefs
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+*.cache
+*.ilk
+*.log
+[Bb]in
+[Dd]ebug*/
+*.lib
+*.sbr
+obj/
+[Rr]elease*/
+_ReSharper*/
+[Tt]est[Rr]esult*
+.vs/
+*.vsix
+*.vsixmanifest
+
+# Node.js / Angular
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+/dist
+.angular/
+.npm
+.eslintcache
+*.tgz
+*.tar.gz
+coverage/
+e2e/
+*.spec.ts.map
+*.js.map
+
+# Angular specific
+/src/web-ui/dist/
+/src/web-ui/tmp/
+/src/web-ui/out-tsc/
+/src/web-ui/bazel-out
+/src/web-ui/.angular/cache
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Python virtual environments
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+.tox
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# PyCharm
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# JetBrains
+.idea/
+*.iws
+*.iml
+*.ipr
+*.swp
+*.swo
+*~
+
+# Mac
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+.docker/
+
+# Kubernetes
+*.kubeconfig
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Bower dependency directory
+bower_components
+
+# node-waf configuration
+.lock-wscript
+
+# Compiled binary addons
+build/Release
+
+# Dependency directories
+jspm_packages/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+.env.test
+
+# parcel-bundler cache
+.cache
+.parcel-cache
+
+# next.js build output
+.next
+
+# nuxt.js build output
+.nuxt
+
+# vuepress build output
+.vuepress/dist
+
+# Serverless directories
+.serverless/
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local files
+.dynamodb/
+
+# TernJS port file
+.tern-port
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+# Temporary folders
+tmp/
+temp/
+
+# Application specific
+appsettings.Development.json
+appsettings.Local.json
+*.pfx
+*.p12
+secrets.json
+local.settings.json
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Redis
+dump.rdb
+
+# Elastic Search
+elasticsearch/
+
+# Certificate files
+*.crt
+*.key
+*.pem
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# Azure
+.azure/
+
+# AWS
+.aws/
+
+# Security and secrets
+secrets/
+*.secrets
+*.key
+*.pem
+*.p12
+*.pfx
+.env.local
+.env.production

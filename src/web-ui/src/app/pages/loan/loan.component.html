@@ -1,0 +1,22 @@
+<h2>Loan Application</h2>
+<form (ngSubmit)="submit()">
+  <div>
+    <input [(ngModel)]="fullName" name="fullName" placeholder="Full Name" required>
+  </div>
+  <div>
+    <input [(ngModel)]="amount" name="amount" type="number" placeholder="Amount" required>
+  </div>
+  <div>
+    <input [(ngModel)]="termMonths" name="termMonths" type="number" placeholder="Term (months)" required>
+  </div>
+  <button type="submit">Apply</button>
+</form>
+
+<div *ngIf="error" class="error">
+  <p>{{ error }}</p>
+</div>
+
+<div *ngIf="result">
+  <p>{{ result.message }}</p>
+  <p>Approved Amount: {{ result.approvedAmount }}</p>
+</div>

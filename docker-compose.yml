@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  loan-api:
+    build: ./src/loan-api
+    ports:
+      - "5000:5000"
+    depends_on:
+      - scoring-engine
+
+  scoring-engine:
+    build: ./src/scoring-engine
+    ports:
+      - "8000:8000"
